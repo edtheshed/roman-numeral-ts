@@ -1,17 +1,5 @@
 import React from 'react';
-
-class RomanNumeral {
-
-    of(digit:number){
-        if (digit===3){
-            return "III"
-        }
-        if (digit===2){
-            return "II";
-        }
-        return "I";
-    }
-}
+import { RomanNumeral } from './RomanNumeral';
 
 test('roman numerals should', () => {
     let romanNumeral = new RomanNumeral();
