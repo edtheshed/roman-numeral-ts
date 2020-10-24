@@ -21,4 +21,8 @@ test('roman numerals should', () => {
     expect(romanNumeral.of(50)).toBe("L");
     expect(romanNumeral.of(51)).toBe("LI");
     expect(romanNumeral.of(60)).toBe("LX");
+    expect(romanNumeral.of(70)).toBe("LXX");
+    expect(romanNumeral.of(100)).toBe("C");
+    expect(romanNumeral.of(200)).toBe("CC");
+    expect(romanNumeral.of(372)).toBe("CCCLXXII");
 });
