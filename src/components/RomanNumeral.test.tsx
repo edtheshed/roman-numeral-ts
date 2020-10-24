@@ -15,4 +15,10 @@ test('roman numerals should', () => {
     expect(romanNumeral.of(15)).toBe("XV");
     expect(romanNumeral.of(16)).toBe("XVI");
     expect(romanNumeral.of(20)).toBe("XX");
+    expect(romanNumeral.of(21)).toBe("XXI");
+    expect(romanNumeral.of(25)).toBe("XXV");
+    expect(romanNumeral.of(30)).toBe("XXX");
+    expect(romanNumeral.of(50)).toBe("L");
+    expect(romanNumeral.of(51)).toBe("LI");
+    expect(romanNumeral.of(60)).toBe("LX");
 });
