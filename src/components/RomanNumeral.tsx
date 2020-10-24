@@ -5,9 +5,20 @@ export class RomanNumeral {
         let ones = digit % 10
         let tens = ((digit - ones) % 100) / 10
         let hundreds = ((digit - tens * 10 - ones) % 1000) / 100
+        let thousands = ((digit - hundreds * 100 - tens * 10 - ones) % 10000) / 1000
         //  console.log(hundreds)
         //  console.log(tens)
         //  console.log(ones)
+        for (let index = 0; index < thousands; index++) {
+            roman += "M"
+            digit -= 1000
+        }
+        if (digit >= 500) {
+            roman += "D"
+            digit -= 500
+            hundreds -= 5
+        }
+
         for (let index = 0; index < hundreds; index++) {
             roman += "C"
             digit -= 100

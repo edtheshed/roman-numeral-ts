@@ -25,4 +25,6 @@ test('roman numerals should', () => {
     expect(romanNumeral.of(100)).toBe("C");
     expect(romanNumeral.of(200)).toBe("CC");
     expect(romanNumeral.of(372)).toBe("CCCLXXII");
+    expect(romanNumeral.of(500)).toBe("D");
+    expect(romanNumeral.of(1000)).toBe("M");
 });
